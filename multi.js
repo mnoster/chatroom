@@ -10,7 +10,7 @@ function webSocketInit() {
 
         console.log('connecting');
         // Let us open a web socket
-        ws = new WebSocket("ws://localhost:8001/echo");
+        ws = new WebSocket("ws://mnoster.github.io/chatroom");
 
         ws.onopen = function () {
             // Web Socket is connected, send data using send()

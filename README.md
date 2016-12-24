@@ -1,2 +1,1 @@
-# chatroom
-public chatroom built with node websockets
+# nodejs_websocket_chat

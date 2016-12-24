@@ -1,0 +1,51 @@
+html,body,.main-contain{
+    background-color: #000066;
+}
+.top-header{
+    margin:8px 0;
+}
+.main{
+    background-color: #000066;
+    color: white;
+}
+#message_area{
+    /*color: #00fa5d;*/
+    height: 72vh;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #000000;
+    overflow: auto;
+}
+
+.message_sender{
+    float: left;
+    font-weight: bold;
+    width: 30%;
+}
+.message_text{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+.message_row{
+    clear: both;
+}
+.type-area{
+    bottom:0;
+    position: fixed;
+}
+#username{
+    color:black;
+}
+#send{
+    color:red;
+    margin:12px 0 8px 0;
+}
+textarea.form-control{
+    border-top-left-radius: 0;
+    border-top-right-radius:0;
+}
+#connect.btn.btn-warning{
+    border-radius: 2px;
+}

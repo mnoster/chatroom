@@ -10,7 +10,7 @@ function webSocketInit() {
 
         console.log('connecting');
         // Let us open a web socket
-        ws = new WebSocket("ws://ec2-52-40-0-117.us-west-2.compute.amazonaws.com");
+        ws = new WebSocket("wss://ec2-52-40-0-117.us-west-2.compute.amazonaws.com");
 
         ws.onopen = function () {
             // Web Socket is connected, send data using send()

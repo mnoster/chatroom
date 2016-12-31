@@ -10,7 +10,7 @@ function webSocketInit() {
 
         console.log('connecting');
         // Let us open a web socket
-        ws = new WebSocket("wss://https://www.mnoster.github.io/chatroom/");
+        ws = new WebSocket("ws://localhost:8001/echo");
 
         ws.onopen = function () {
             // Web Socket is connected, send data using send()
@@ -141,7 +141,7 @@ function update_message_display(html, refresh) {
         $("#message_area").html('');
 
     }
-    $("#message_area").append(html);
+    $("#message_area").prepend(html);
 
         var sender_name = $(".message_sender").text();
         var sender_array = sender_name.split(":");

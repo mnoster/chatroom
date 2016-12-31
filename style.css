@@ -1,8 +1,9 @@
-html,body,.main-contain{
+html,body,.main-contain,.main{
     background-color: #000066;
 }
 .top-header{
     margin:8px 0;
+    position: relative;
 }
 .main{
     background-color: #000066;
@@ -10,14 +11,27 @@ html,body,.main-contain{
 }
 #message_area{
     /*color: #00fa5d;*/
-    height: 70vh;
+    height: 72vh;
     border: 1px solid black;
     border-radius: 6px;
     padding: 8px;
     background-color: #000000;
     overflow: auto;
 }
-
+.day-time{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:4px;
+    position: absolute;
+    right:20px;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid black;
+    border-top: none;
+}
+.day-time:hover{
+    cursor: pointer;
+}
 .message_sender{
     float: left;
     font-weight: bold;

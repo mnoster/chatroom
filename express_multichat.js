@@ -4,7 +4,7 @@
 process.title = 'node-chat';
 
 // Port where we'll run the websocket server
-var webSocketsServerPort = "https://mnoster.github.io/chatroom";
+var webSocketsServerPort = "8001";
 
 // websocket and http servers
 var webSocketServer = require('websocket').server;

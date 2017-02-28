@@ -168,8 +168,13 @@ $(document).ready(function () {
         $('#outbound_message').val('');
     });
     $("#outbound_message").on('keypress', function (e) {
+        var message = $('#outbound_message').val();
+        if(message == '' || message == ' '){
+            return;
+        }
         if (e.which == 13) {
             console.log('enter key pressed');
+            event.preventDefault();
             send_message();
         }
     });
